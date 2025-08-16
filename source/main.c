@@ -1,3 +1,4 @@
+
 #include "fsl_device_registers.h"
 #include "fsl_debug_console.h"
 #include "board.h"
@@ -90,7 +91,7 @@ int main(void)
     	            total_lenght += length;
 
     	        }
-    	        //PRINTF("Total_length = %.2f\n", total_lenght);
+
     	        if (num_vectors && total_lenght) {
     	        	angle /= total_lenght;
     	        }
