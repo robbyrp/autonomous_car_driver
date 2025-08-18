@@ -43,10 +43,10 @@ void differentialSpeed(double angle) {
 		HbridgeSpeed(&g_hbridge, SPEED_RIGHT - 10, SPEED_LEFT + 10);
 		if (angle > 20) {
 			PRINTF("NU\n");
-			HbridgeSpeed(&g_hbridge, SPEED_TURN_RIGHT * 1.8, SPEED_TURN_LEFT / 1.8);
+			HbridgeSpeed(&g_hbridge, SPEED_TURN_RIGHT * 1.8, SPEED_TURN_LEFT / 1.5);
 		} else if (angle < -20) {
 			PRINTF("DA\n");
-			HbridgeSpeed(&g_hbridge, SPEED_TURN_RIGHT / 1.9, SPEED_TURN_LEFT * 1.9);
+			HbridgeSpeed(&g_hbridge, SPEED_TURN_RIGHT / 1.7, SPEED_TURN_LEFT * 1.9);
 		}
 	} else {
 		HbridgeSpeed(&g_hbridge, SPEED_RIGHT, SPEED_LEFT);
